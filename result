@@ -1,0 +1,14 @@
+number of processed documents: 37482 
+
+number of unique words: 181847 
+
+max tf-idf: 20.0857798605 
+
+min tf-idf 0.0 
+
+Time for building dictionary: 1739.30800009 
+
+Time for saving dictionary: 17.2459998131 
+
+Time for saving dictionary tree: 91.1039998531 
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <title>Project 3</title>
+		
+		<script>
+		function myFunction() {
+		var query = $("#query").val();
+		var num = $("#num").val();
+		$.ajax({
+		type: "POST",
+		url: "/my",
+		data: { "query": query, "num": num}
+		}).done(function( o ) {
+		// do something
+		});
+		
+		
+		//var x = document.getElementById("query").value;
+		//var y = document.getElementById("num").value;
+		//document.getElementById("demo").innerHTML = x;
+		}
+		
+		
+		</script>
+		
+    </head>
+    <body>
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		></script>
+		
+		<input type="text" id="query" value="query">
+		<input type="text" id="num" value="20">
+		<button onclick="myFunction()">Send</button>
+	
+		<p id="demo"></p>
+		
+    </body>
+</html>
